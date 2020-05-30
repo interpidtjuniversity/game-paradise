@@ -1,5 +1,6 @@
 # game-paradise
 游戏天堂(vue.js javascript,类似4399)
+look at http://47.114.153.37:8082/#/game-paradise        (ps: 多等一会, maybe 几分钟....)
 
 
 如何运行
