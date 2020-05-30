@@ -17,6 +17,6 @@ yarn serve      服务器请(更改运行端口为xxxx)  nohup yarn serve --port
 
 
 ![image](http://github.com/interpidtjuniversity/game-paradise/raw/master/images/1.png)
-<img width="150" height="150" src="http://github.com/interpidtjuniversity/game-paradise/raw/master/images/1.png"/>
+<img width="1916" height="903" src="http://github.com/interpidtjuniversity/game-paradise/raw/master/images/2.png"/>
 
 
