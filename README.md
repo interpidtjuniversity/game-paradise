@@ -13,3 +13,9 @@ yarn install
 yarn serve      服务器请(更改运行端口为xxxx)  nohup yarn serve --port xxxx >/dev/null 2>&1 & exit
 
 4.访问 ip:8080/#/game-paradise或ip:xxxx/#/game-paradise
+
+
+
+![image](http://github.com/interpidtjuniversity/game-paradise/raw/master/images/1.png)
+
+
