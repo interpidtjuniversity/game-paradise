@@ -4,6 +4,7 @@ look at http://47.114.153.37:8082/#/game-paradise        (ps: 多等一会, mayb
 
 
 如何运行
+
 1.安装yarn
 cnpm install -g yarn
 
