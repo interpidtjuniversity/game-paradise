@@ -1,5 +1,5 @@
 # game-paradise
-游戏天堂(vue.js javascript,类似4399)
+游戏天堂(vue.js javascript,类似4399) 还可以随时查看中美等十个国家的疫情地图, 在玩游戏时也不忘心系天下。
 look at http://47.114.153.37:8082/#/game-paradise        (ps: 多等一会, maybe 几分钟....)
 
 
