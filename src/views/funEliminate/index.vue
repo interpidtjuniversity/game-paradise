@@ -17,7 +17,6 @@
         :class="_item"
         @mousedown="dragStart(index, _index)"
         @mouseup="dragEnd">
-        {{_item}}
       </div>
     </div>
   </div>
@@ -42,14 +41,14 @@
       },
       init(): void {
         this.squareData = [];
-        const chars: string[] = ['A', 'S', 'D', 'F', 'G', 'H', 'J'];
-        for (let i = 0; i < 10; i++) {
+        const chars: string[] = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'C'];
+        for (let i = 0; i < 7; i++) {
           for (let j = 0; j < 10; j++) {
             if (j === 0) {
               // @ts-ignore
-              this.squareData.push([chars[Math.floor(Math.random() * 7)]]);
+              this.squareData.push([chars[Math.floor(Math.random() * 8)]]);
             } else {
-              this.$set(this.squareData[i], j, chars[Math.floor(Math.random() * 7)]);
+              this.$set(this.squareData[i], j, chars[Math.floor(Math.random() * 8)]);
             }
           }
         }
@@ -57,7 +56,7 @@
         this.clear();
       },
     clear(): void {
-      const m: number = 10;
+      const m: number = 7;
       const n: number = 10;
       while (true) {
         const del: any[] = [];
@@ -135,7 +134,7 @@
           this.$set(this.squareData[row], col + 1, a);
         }
       } else {
-        if (y > 0 && row < 9) {
+        if (y > 0 && row < 6) {
           const a: string = this.squareData[row][col];
           const b: string = this.squareData[row + 1][col];
           this.$set(this.squareData[row], col, b);
@@ -158,11 +157,11 @@
       }
     },
     fillSquare(): void {
-      const chars: string[] = ['A', 'S', 'D', 'F', 'G', 'H', 'J'];
-      for (let i = 0; i < 10; i++) {
+      const chars: string[] = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'C'];
+      for (let i = 0; i < 7; i++) {
         for (let j = 0; j < 10; j++) {
           if (this.squareData[i][j] === '0') {
-            this.$set(this.squareData[i], j, chars[Math.floor(Math.random() * 7)]);
+            this.$set(this.squareData[i], j, chars[Math.floor(Math.random() * 8)]);
           }
         }
       }
@@ -186,16 +185,17 @@
 .row{
   display: flex;
   line-height: 40px;
-  width: 400px;
+  width: 700px;
   margin: 0 auto;
   font-weight: bold;
 }
 .square{
-  width: 40px;
   cursor: pointer;
   border-radius: 4px;
   margin: 2px;
   color: white;
+  height: 68px;
+  width: 68px;
 }
 .square:active{
   animation-name: jitter;
@@ -203,26 +203,28 @@
   animation-iteration-count: infinite;
 }
 .square.A{
-  background-color: #8D98CA;
-
+  background-image:url("./images/AntoineGriezmann.jpg");
 }
 .square.S{
-  background-color: #A9A2F6;
+  background-image:url("./images/MohamedSalah.jpg");
 }
 .square.D{
-  background-color: #56CAD9;
+  background-image:url("./images/RaheemSterling.jpg");
 }
 .square.F{
-  background-color: #CDBEB0;
+  background-image:url("./images/ThomasMuller.jpg");
 }
 .square.G{
-  background-color: #D2E08E;
+  background-image:url("./images/WayneRooney.jpg");
 }
 .square.H{
-  background-color: rgb(142, 224, 167);
+  background-image:url("./images/Neymar.jpg");
 }
 .square.J{
-  background-color: rgb(142, 180, 224);
+  background-image:url("./images/CristianoRonaldo.jpg");
+}
+.square.C{
+  background-image:url("./images/LionelMessi.jpg");
 }
 
 .restart{

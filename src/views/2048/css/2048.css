@@ -5,10 +5,11 @@
 .game {
     margin: 20px auto 0;
     padding: 20px;
-    width: 600px;
+    width: 650px;
     font: 14px/2 arial, sans-serif;
     color: #fff;
-    background: #BBADA0;
+    /*background: #BBADA0;*/
+    background-image: url("../images/footballPG.jpg");
 }
 .game-cmds {
     position: relative;
@@ -51,16 +52,16 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 500px;
-    height: 500px;
-    background-color: #BBADA0;
+    width: 600px;
+    height: 600px;
+    /*background-color: limegreen;
     /* 样式参考：http://gabrielecirulli.github.io/2048/style/main.css */
 }
 .game-2048-board .cell {
     position: absolute;
     padding: 5px;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     box-sizing: border-box;
     transition: all 0.2s;
 }
@@ -68,25 +69,31 @@
     top: 0;
 }
 .game-2048-board .cell[data-row="1"] {
-    top: 25%;
+    top: 20%;
 }
 .game-2048-board .cell[data-row="2"] {
-    top: 50%;
+    top: 40%;
 }
 .game-2048-board .cell[data-row="3"] {
-    top: 75%;
+    top: 60%;
+}
+.game-2048-board .cell[data-row="4"] {
+    top: 80%;
 }
 .game-2048-board .cell[data-col="0"] {
     left: 0;
 }
 .game-2048-board .cell[data-col="1"] {
-    left: 25%;
+    left: 20%;
 }
 .game-2048-board .cell[data-col="2"] {
-    left: 50%;
+    left: 40%;
 }
 .game-2048-board .cell[data-col="3"] {
-    left: 75%;
+    left: 60%;
+}
+.game-2048-board .cell[data-col="4"] {
+    left: 80%;
 }
 .game-2048-board .cell i {
     display: block;
@@ -105,52 +112,85 @@
 }
 .game-2048-board [num="2"] i {
     color: #888;
-    background-color: #eee4da;
+    background-color: white;
+    background-image: url("../images/hm.jpg") ;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="4"] i {
     color: #888;
-    background-color: #ede0c8;
+    background-color: white;
+    background-image: url("../images/bs.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="8"] i {
     color: #f9f6f2;
-    background-color: #f2b179;
+    background-color: white;
+    background-image: url("../images/br.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="16"] i {
     color: #f9f6f2;
-    background-color: #f59563;
+    background-color: white;
+    background-image: url("../images/lp.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="32"] i {
     color: #f9f6f2;
-    background-color: #f67c5f;
+    background-color: white;
+    background-image: url("../images/mj.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="64"] i {
     color: #f9f6f2;
-    background-color: #f65e3b;
+    background-color: white;
+    background-image: url("../images/dt.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="128"] i {
     font-size: 46px;
     color: #f9f6f2;
-    background-color: #edcf72;
+    background-color: white;
+    background-image: url("../images/psg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="256"] i {
     font-size: 46px;
     color: #f9f6f2;
-    background-color: #edcc61;
+    background-color: white;
+    background-image: url("../images/mc.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="512"] i {
     font-size: 46px;
     color: #f9f6f2;
-    background-color: #edc850;
+    background-color: white;
+    background-image: url("../images/yw.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="1024"] i {
     font-size: 34.5px;
     color: #f9f6f2;
-    background-color: #edc53f;
+    background-color: white;
+    background-image: url("../images/ajax.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="2048"] i {
     font-size: 34.5px;
     color: #f9f6f2;
-    background-color: #edc22e;
+    background-color: white;
+    background-image: url("../images/mu.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .game-2048-board [num="super"] i {
     font-size: 28.75px;

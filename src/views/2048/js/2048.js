@@ -192,7 +192,7 @@ $.extend(Game.prototype, {
 					num > 2048 ? "super" : num
 			)
 			.find('i')
-			.text(num === 0 ? "" : num)
+			.text("")
 	},
 
 	addRandomNumber: function () {
@@ -260,11 +260,11 @@ $.extend(MessageBox.prototype, {
 
 module.exports = MessageBox
 },{"jquery":"jquery"}],5:[function(require,module,exports){
-var ROW_COUNT = 4
-var COL_COUNT = 4
+var ROW_COUNT = 5
+var COL_COUNT = 5
 
 function Numbers() {
-	this.numbers = [[0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0]]
+	this.numbers = [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0]]
 	// 历次移动的过程记录
 	// TODO 利用记录的移动过程数据实现“撤销”、“重做”
 	this.moves = []
