@@ -30,7 +30,7 @@ jobs:
           pkg-manager: yarn 
       - run:
           name: Run start
-          command: yarn serve 8080 nohup yarn serve --port xxxx >/dev/null 2>&1 & exit
+          command: nohup yarn serve --port 8888 >/dev/null 2>&1 & exit
 
 workflows:
   # Below is the definition of your workflow.
