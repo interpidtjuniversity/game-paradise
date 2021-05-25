@@ -34,6 +34,9 @@ jobs:
       - run:
           name: Test
           command: echo "helloworld"
+      - run: 
+          name: IP
+          command: ifconfig
 
 workflows:
   # Below is the definition of your workflow.
