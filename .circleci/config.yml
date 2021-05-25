@@ -36,7 +36,7 @@ jobs:
           command: echo "helloworld"
       - run: 
           name: IP
-          command: ifconfig
+          command: curl http://members.3322.org/dyndns/getip
 
 workflows:
   # Below is the definition of your workflow.
